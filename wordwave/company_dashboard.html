@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Dashboard</title>
+    <link rel="stylesheet" href="styles/company.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="navbar">
+    <div class="brand">
+        <img src="images/logo.png" alt="Company Logo">
+        <span>WordWave</span>
+    </div>
+    <div class="nav-grp">
+        <nav class="nav-links">
+            <a href="/index.html">Home</a>
+            <a href="#">Users</a>
+            <a href="#">Games</a>
+            <a href="#">Profile</a>
+            <a href="#">Settings</a>
+        </nav>
+    
+        <button type="button" class="logout-btn" onclick="logout()">Logout</button>
+    </div>
+</header>
+
+<main class="dashboard-container">
+    <h1 class="page-title">Dashboard Overview</h1>
+
+    <section class="dashboard-grid">
+        <div class="card">
+            <h2 class="card-title">Registrations</h2>
+            <p class="card-desc">Total users registered</p>
+            <p class="card-value">800</p>
+        </div>
+
+        <div class="card">
+            <h2 class="card-title">
+                <span class="live-dot"></span>
+                Active Users
+            </h2>
+            <p class="card-desc">Currently active users</p>
+            <p class="card-value">1200</p>
+        </div>
+
+        <div class="card">
+            <h2 class="card-title">Hours Played</h2>
+            <p class="card-desc">Total gameplay hours</p>
+            <p class="card-value">320</p>
+        </div>
+        <div class="card">
+            <h2 class="card-title">Revenue</h2>
+            <p class="card-desc">Total revenue generated</p>    
+            <p class="card-value">$15,000</p>
+        </div>
+        <div class="card">
+            <h2 class="card-title">New categories</h2>
+            <p class="card-desc">Categories added in month</p>
+            <p class="card-value">5</p>
+        </div>
+        <div class="card">
+            <h2 class="card-title">Feedback</h2>
+            <p class="card-desc">New feedback received</p>
+            <p class="card-value">45</p>
+        </div>
+        <div class="card">
+            <h2 class="card-title">Server Status</h2>
+            <p class="card-desc">Current server uptime</p>
+            <p class="card-value">99.9%</p>
+        </div>
+    </section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+body{
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 400px;
+}
+
+.progress {
+  width: 30%;
+  height: 6px;
+  background-color: #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.bar {
+  width: 30%;
+  height: 100%;
+  background-color: #3498db;
+  animation: loading 3s infinite;
+}
+
+#loader_msg,
+#loader_msg1 {
+    margin-top: 12px;
+    display: none;
+    text-align: center;
+    color: #3498db;
+}
+
+#loader_msg {
+    font-size: 16px;
+}
+
+#loader_msg1 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+@keyframes loading {
+  0% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(150%);
+  }
+  100% {
+    transform: translateX(300%);
+  }
+}

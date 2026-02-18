@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Categories</title>
+
+    <!-- Company styles -->
+    <link rel="stylesheet" href="styles/company.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Navbar -->
+<header class="navbar">
+    <div class="brand">
+        <img src="images/logo.png" alt="Company Logo">
+        <span>Company</span>
+    </div>
+
+    <div class="nav-grp">
+        <nav class="nav-links">
+            <a href="/index.html">Home</a>
+            <a href="#">categories</a>
+            <a href="#">Profile</a>
+            <a href="#">Settings</a>
+        </nav>
+
+        <button type="button" class="logout-btn" onclick="logout()">Logout</button>
+    </div>
+</header>
+
+<!-- Main Content -->
+<main class="dashboard-container">
+
+    <h1 class="page-title">Wordwave Categories</h1>
+    <p class="card-desc">Choose a category to start playing</p>
+
+    <section class="dashboard-grid">
+        <!-- General Category -->
+        <div class="card">
+            <h2 class="card-title">General Vocabulary</h2>
+            <p class="card-desc">
+                Improve your everyday vocabulary with common and fun words.
+            </p>
+            <button class="logout-btn" onclick="window.location.href='./game.html'">
+                Start Game
+            </button>
+        </div>
+        <!-- CS Category -->
+        <div class="card">
+            <h2 class="card-title">Computer Science</h2>
+            <p class="card-desc">
+                Test your knowledge with programming, data structures,
+                and computer science terms.
+            </p>
+            <button class="logout-btn" onclick="window.location.href='#'">
+                Start Game
+            </button>
+        </div>
+        <div class="card">
+            <h2 class="card-title">Science & Nature</h2>
+            <p class="card-desc">
+                Explore the world of science with terms from biology,
+                physics, and more.
+            </p>
+            <button class="logout-btn" onclick="window.location.href='#'">
+                Start Game
+            </button>
+        </div>
+            <div class="card">
+                <h2 class="card-title
+                ">Entertainment</h2>
+                <p class="card-desc">
+                    Dive into the world of movies, music, and pop culture.
+                </p>
+                <button class="logout-btn" onclick="window.location.href='#'">
+                    Start Game
+                </button>
+            </div>
+             <div class="card">
+                <h2 class="card-title
+                ">Sports</h2>
+                <p class="card-desc">
+                    Test your sports knowledge with terms from various sports and athletes.
+                </p>
+                <button class="logout-btn" onclick="window.location.href='#'">
+                    Start Game
+                </button>
+            </div>
+             <div class="card">
+                <h2 class="card-title">History & Geography</h2>
+                <p class="card-desc">
+                    Explore historical events and geographical terms from around the world.
+                </p>
+                <button class="logout-btn" onclick="window.location.href='#'">
+                    Start Game
+                </button>
+            </div>
+    </section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

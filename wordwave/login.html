@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="/styles/login.css">
+</head>
+<body>
+    <div class="login-wrapper">
+        <h2>Welcome to WordWave</h2>
+        <form id="loginForm">
+    
+            <label for="userName">Enter your username or email</label>
+            <input type="text" id="userName" placeholder="Username" required></input>
+    
+            <label for="password">Enter your password</label>
+            <div class="password-box">
+                <input type="password" id="password" placeholder="Password" required>
+            </div>
+    
+            <div class="show-password">
+                <input type="checkbox" id="togglePassword">
+                <label for="togglePassword">Show password</label>
+            </div>
+    
+            <button type="submit">Login</button>
+        </form>
+        <div id="success_msg"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
